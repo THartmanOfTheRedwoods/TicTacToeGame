@@ -19,6 +19,13 @@ New developers will often be asked to get up to speed on a project rapidly. It i
 1. Commit & Push your README.md notes back to your origin and issue a Pull request to my instructor repo.
 1. Submit your Pull request URL to **Developer Skills Lab**
 
+NOTES:
+- the String "label" is final (why?)
+- the class PlayerFactory has a getter that returns the name, marker & turn for that player. my guess is this is used each turn for the program to determine and display whose turn it is
+- the sentient players takeTurn method is empty because it is passed input by the player
+- integer array "coordinate" is also final
+- an enum is basically like a mini class you can use for things like lists. all the variables within it are indexed but have names as opposed to numbers
+
 ## Part 2: Demo & Bug Bounty (Not time Sensitive for extra credit)
 
 1. After my in class demonstration, see if you can use the JavaFX knowledge you obtained this week to get the project functioning.
