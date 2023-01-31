@@ -16,6 +16,10 @@ New developers will often be asked to get up to speed on a project rapidly. It i
     * Ask if they can answer the items you jotted down in #2.
 1. Let's discuss as a class the items you still have questions about or are unfamiliar with.
     * Take notes here of things that became more clear after the class discussion.
+    * Hbox and Vbox are layout things
+    * talked about enums (enumerations) a list of unchangeable data.
+    * computer uses minimax algorithm.
+    * theres a bug in there, I should try and find it.
 1. Commit & Push your README.md notes back to your origin and issue a Pull request to my instructor repo.
 1. Submit your Pull request URL to **Developer Skills Lab**
 
