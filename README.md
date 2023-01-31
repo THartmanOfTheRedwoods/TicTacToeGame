@@ -26,3 +26,37 @@ New developers will often be asked to get up to speed on a project rapidly. It i
     * <iframe width="560" height="315" src="https://www.youtube.com/embed/l-hh51ncgDI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 1. I've implemented this algorithm in Computer.java for the AI player, BUT I've added a bug that causes the AI to malfunction when it is the minimizing player.
     * If you can find the MiniMax bug, correct it in your Java code, and submit a pull request back to this branch under a **feature branch** called **MiniMaxBug** you can receive a full lab grade.
+
+
+TicTacToe.java
+> TicTacToe is an extension of JavaFX application, inherits stuff from it
+> TicTacToe is called from program main entry point - confusion resolved
+
+Boardbutton.java
+> Import scene control button from JavaFX
+> BoardButton an extension of vanilla imported Button class?
+
+Computer.java
+> Import application platform + scene node from JavaFX
+> Superclass? name, marker, turn - what is this? still curious to learn more about sub/super
+> Override takeTurn function for AI player
+> AI checks for ties as part of optimal turn-making - confusion resolved
+> Then it escapes my knowledge of Java at this point lmao
+> i see bits about “fake placing” a square to test moves before making one - minimax function
+
+Main.java
+> Main class
+> Launches application with size modifier set to 400, and as a 3x3 square (a typical tic-tac-toe board)
+
+Player.java
+> Initialize variables name, marker, number of wins (at 0), turn number, then assigns them to the player object
+> getName(), getMarker(), getTurn() etc. all update player’s info as the game goes on (i see this referenced in other files)
+
+PlayerFactory.java
+> Labels players as “COMPUTER”or “SENTIENT”, and assigns labels to respective objects.
+
+Sentient.java
+> Sentient player object is an extension of the vanilla player object?
+> Override takeTurn method for the sentient player
+
+
