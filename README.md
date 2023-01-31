@@ -8,13 +8,18 @@ New developers will often be asked to get up to speed on a project rapidly. It i
 1. Fork this repo to your own GitHub Account.
 1. Clone your GitHub Account's repo to your local machine.
 1. Now, take 15 minutes to get a big picture of the code in this application and its features.
-    * Jot down notes here concerning: classes, objects, encapsulation, abstraction, inheritance, and polymorphism (i.e. if they are used, where they occur, etc.).
+    * Jot down notes here concerning:I am unfamiliar with, depending on players, minimal role, private book classes, objects, encapsulation, abstraction, inheritance, and polymorphism (i.e. if they are used, where they occur, etc.).
 1. Don’t be stuck for too long, if you don't understand a section jot it down below and move on.
-    * Jot down part of the code you don't understand here.
+    * Jot down part of the code you don't understand here. I do not understand the code private
+    * final int.
     * I'd like each person to jot down at least 2 things unfamiliar to them.
+    * unfamilar with, depending on players minimum role, private checktiz  
 1. Now Take 5 minutes  and team up with one of your group members and take turns trying to explain what you’ve understood to someone else.
     * Ask if they can answer the items you jotted down in #2.
+    * Questions I have are , What does static void main mean? What is a border pane and why is it private.
 1. Let's discuss as a class the items you still have questions about or are unfamiliar with.
+2. What I learned was, when packaging it will have to tell intelligi for it knows what you are trying
+3. to do. 
     * Take notes here of things that became more clear after the class discussion.
 1. Commit & Push your README.md notes back to your origin and issue a Pull request to my instructor repo.
 1. Submit your Pull request URL to **Developer Skills Lab**
