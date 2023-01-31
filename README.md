@@ -2,6 +2,8 @@
 JavaFX TicTacToeGame for CIS-18 bug training!
 
 ## Part 1: Developer Skills
+@author Trevor Hartman
+@author Ricky G
 
 New developers will often be asked to get up to speed on a project rapidly. It is essential that new developers be able to look through code, identify pieces the under-stand, and research pieces they do not. This is an exercise that takes 2 forms, first an introduction to code scanning and review and second as a tool to help you identify areas you need to improve your knowledge of.
 
