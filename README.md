@@ -26,3 +26,10 @@ New developers will often be asked to get up to speed on a project rapidly. It i
     * <iframe width="560" height="315" src="https://www.youtube.com/embed/l-hh51ncgDI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 1. I've implemented this algorithm in Computer.java for the AI player, BUT I've added a bug that causes the AI to malfunction when it is the minimizing player.
     * If you can find the MiniMax bug, correct it in your Java code, and submit a pull request back to this branch under a **feature branch** called **MiniMaxBug** you can receive a full lab grade.
+
+My questions are:
+explain the minimax class and how it determines the player moves
+explain the encapsulation of the player types in the player factory class/ enum
+Thing that are more clear after lecture:
+use enum to past a list of player types back to the playerFactory class 
+types can be declared in the class but not necessary
