@@ -5,10 +5,14 @@ JavaFX TicTacToeGame for CIS-18 bug training!
 
 New developers will often be asked to get up to speed on a project rapidly. It is essential that new developers be able to look through code, identify pieces the under-stand, and research pieces they do not. This is an exercise that takes 2 forms, first an introduction to code scanning and review and second as a tool to help you identify areas you need to improve your knowledge of.
 
+   *Ben was here
 1. Fork this repo to your own GitHub Account.
 1. Clone your GitHub Account's repo to your local machine.
 1. Now, take 15 minutes to get a big picture of the code in this application and its features.
-    * Jot down notes here concerning: classes, objects, encapsulation, abstraction, inheritance, and polymorphism (i.e. if they are used, where they occur, etc.).
+    * Getparameters found in TicTacToe.jave is an example of encapsulation and abstraction
+    * Enums are basically a list of the possible player types
+    * Application is what sets the UI game setup found in main, which application is something found in javafx
+    * Lib is a list of JavaFx modules which is not necessary but if not found then it can be found in project structures/modules 
 1. Don’t be stuck for too long, if you don't understand a section jot it down below and move on.
     * Jot down part of the code you don't understand here.
     * I'd like each person to jot down at least 2 things unfamiliar to them.
