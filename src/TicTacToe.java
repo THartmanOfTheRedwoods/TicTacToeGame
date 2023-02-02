@@ -5,12 +5,11 @@ import javafx.geometry.Pos;
 import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.scene.control.TextField;
 import javafx.scene.layout.*;
 import javafx.stage.Stage;
+
 import java.util.ArrayList;
+
 
 public class TicTacToe extends Application {
 
@@ -176,7 +175,7 @@ public class TicTacToe extends Application {
             a.setTitle("We have a winner!!!");
             a.setContentText(String.format("and the winner is %s", current.getName()));
         }
-        a.setOnCloseRequest((dialogEvent -> {this.startOver();}));
+        a.setOnCloseRequest((dialogEvent -> this.startOver()));
         a.show();
     }
 

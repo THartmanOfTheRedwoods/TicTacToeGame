@@ -6,6 +6,7 @@ public class PlayerFactory {
         PlayerTypes(String label) {
             this.label = label;
         }
+
         public String toString() {
             return label;
         }

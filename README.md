@@ -8,14 +8,31 @@ New developers will often be asked to get up to speed on a project rapidly. It i
 1. Fork this repo to your own GitHub Account.
 1. Clone your GitHub Account's repo to your local machine.
 1. Now, take 15 minutes to get a big picture of the code in this application and its features.
-    * Jot down notes here concerning: classes, objects, encapsulation, abstraction, inheritance, and polymorphism (i.e. if they are used, where they occur, etc.).
+    * Jot down notes here concerning: (i.e. if they are used, where they occur, etc.).
+    * classes: main, player, playerFactory, Sentient, BoardButton, Computer, TicTacToe
+    * objects: coordinate array object in BoardButton. In the Computer class there is an object called d of type Stringbuilder. sentient and computer in the PlayerFactory class. Stringbuilder d in Computer class. in tictactoe class there's an arraylist object called, i think, of the players, and playerfactory is an object, gamelayout, menu, btnplaygame, lblstate, scene, vblayout, combobox, hb namelayout, lblPlayerName, tfPlayerName, hbMarkerLayout, lblMarker, tfMarker, btnAddPlayer, a, board, rc, cc, square, a,gridPaneArray 
+    * encapsulation: setters pretty mush a lot of this method: public VBox createConfigMenu() and the start() method
+    * -  in tictactoe: 
+    - comboBox.setValue(null);
+          tfPlayerName.setText(null);
+          tfMarker.setText(null);
+          // Update feedback to let us know the player was added.
+          this.lblState.setText(String.format("Player %s : %s added...", name, marker));
+    * abstraction: Player class, getters, tictactoe: init(), 
+    * in tictactoe: -this.playerFactory.getPlayer(comboBox.getValue(), name, marker, turn));
+    * inheritance: tictactoe extends Application, computer extends player, boardbutton extends button, sentient extends player
+    * polymorphism: init(),  player class
 1. Don’t be stuck for too long, if you don't understand a section jot it down below and move on.
     * Jot down part of the code you don't understand here.
+    * case COMPUTER -> new Computer(name, marker, turn);
+      case SENTIENT -> new Sentient(name, marker, turn);
+    * I get it sort of I'm just not sure why we are using lambda, maybe because they are cases.
     * I'd like each person to jot down at least 2 things unfamiliar to them.
 1. Now Take 5 minutes  and team up with one of your group members and take turns trying to explain what you’ve understood to someone else.
     * Ask if they can answer the items you jotted down in #2.
 1. Let's discuss as a class the items you still have questions about or are unfamiliar with.
     * Take notes here of things that became more clear after the class discussion.
+    * enum became more clear
 1. Commit & Push your README.md notes back to your origin and issue a Pull request to my instructor repo.
 1. Submit your Pull request URL to **Developer Skills Lab**
 
