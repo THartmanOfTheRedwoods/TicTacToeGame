@@ -2,7 +2,7 @@ public class PlayerFactory {
     public enum PlayerTypes {
         COMPUTER("Computer"),
         SENTIENT("Sentient");
-        private final String label;
+        private final String babel;
         PlayerTypes(String label) {
             this.label = label;
         }

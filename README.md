@@ -9,13 +9,22 @@ New developers will often be asked to get up to speed on a project rapidly. It i
 1. Clone your GitHub Account's repo to your local machine.
 1. Now, take 15 minutes to get a big picture of the code in this application and its features.
     * Jot down notes here concerning: classes, objects, encapsulation, abstraction, inheritance, and polymorphism (i.e. if they are used, where they occur, etc.).
+    * Main passes parameters to the init class in TicTacToe which acts like a constructor to create a javaFX application.
+    * TicTacToe inherits classes from the JavaFX library
+    * TicTacToe uses BoardButton (which uses polymorphism) to add buttons to configure player
+      * The player configuration screen uses the enums in PlayerFactory to assign player types which is a type of abstraction
+      * The enums in playerfactory refer to Sentient or Computer and then pass on info to Player.
+    * Each turn, the player number is incremented and each player can make their move using either the button input or the computer class.
+    * Each turn, TicTacToe checks for 3 consecutive squares of the same mark and delcares a winner
 1. Don’t be stuck for too long, if you don't understand a section jot it down below and move on.
-    * Jot down part of the code you don't understand here.
-    * I'd like each person to jot down at least 2 things unfamiliar to them.
+    * I don't understand exactly how the players are constructed,
+    * I don't understand how the computer works
+    * I don't entirely understand how the buttons are constructed.
 1. Now Take 5 minutes  and team up with one of your group members and take turns trying to explain what you’ve understood to someone else.
-    * Ask if they can answer the items you jotted down in #2.
+    * We all had similar questions, but talking through our group we learned about how the state system works in the computer algorithm as well as how javaFX integration works
 1. Let's discuss as a class the items you still have questions about or are unfamiliar with.
-    * Take notes here of things that became more clear after the class discussion.
+    * The class discussion cleared up the purpose of Boardbutton for the javaFX UI
+    * I also learned about how TicTacToe was the overarching program that referred to classes and interfaces present in the other java files.
 1. Commit & Push your README.md notes back to your origin and issue a Pull request to my instructor repo.
 1. Submit your Pull request URL to **Developer Skills Lab**
 
