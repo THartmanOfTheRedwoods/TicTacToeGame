@@ -9,8 +9,15 @@ New developers will often be asked to get up to speed on a project rapidly. It i
 1. Clone your GitHub Account's repo to your local machine.
 1. Now, take 15 minutes to get a big picture of the code in this application and its features.
     * Jot down notes here concerning: classes, objects, encapsulation, abstraction, inheritance, and polymorphism (i.e. if they are used, where they occur, etc.).
+    * The computer class is concerning to me, I know it represents a player. An AI. It inherits from the player class.
+    * The class uses encapsulated methods like spacing, checkTie and minimax. The takeTurn method uses abstraction by calling the method but not showing all of the code.
+   The takeTurn method also uses polymorphism by being overridden in the computer class
 1. Don’t be stuck for too long, if you don't understand a section jot it down below and move on.
     * Jot down part of the code you don't understand here.
+    * Node[][] board = game.getBoard();
+    * I'm confused on what the Node command does.
+    * Platform.runLater(((BoardButton)board[move[0]][move[1]])::fire);
+    * I also do not understand the platform.runlater code
     * I'd like each person to jot down at least 2 things unfamiliar to them.
 1. Now Take 5 minutes  and team up with one of your group members and take turns trying to explain what you’ve understood to someone else.
     * Ask if they can answer the items you jotted down in #2.
