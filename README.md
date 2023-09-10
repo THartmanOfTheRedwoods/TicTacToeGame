@@ -9,9 +9,14 @@ New developers will often be asked to get up to speed on a project rapidly. It i
 1. Clone your GitHub Account's repo to your local machine.
 1. Now, take 15 minutes to get a big picture of the code in this application and its features.
     * Jot down notes here concerning: classes, objects, encapsulation, abstraction, inheritance, and polymorphism (i.e. if they are used, where they occur, etc.).
+       * JavaFX is an essential library that is imported numerous times.
+       * Computer and Sentient classes extend to Player.
+       * Player is an abstract class.
 1. Don’t be stuck for too long, if you don't understand a section jot it down below and move on.
     * Jot down part of the code you don't understand here.
     * I'd like each person to jot down at least 2 things unfamiliar to them.
+       * I don't understand what is happening in PlayerFactory.java.
+       * I've heard of JavaFX through research on my Sprint, but I don't understand what it really is.
 1. Now Take 5 minutes  and team up with one of your group members and take turns trying to explain what you’ve understood to someone else.
     * Ask if they can answer the items you jotted down in #2.
 1. Let's discuss as a class the items you still have questions about or are unfamiliar with.
