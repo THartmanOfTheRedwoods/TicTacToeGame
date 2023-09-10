@@ -9,9 +9,17 @@ New developers will often be asked to get up to speed on a project rapidly. It i
 1. Clone your GitHub Account's repo to your local machine.
 1. Now, take 15 minutes to get a big picture of the code in this application and its features.
     * Jot down notes here concerning: classes, objects, encapsulation, abstraction, inheritance, and polymorphism (i.e. if they are used, where they occur, etc.).
+    * The classes BoardButton, Computer, Sentient, and TicTacToe all extend from a parent class.
+    * Player is an abstract class.
+    * Both Computer and Sentient extend the Player class.
+    * A switch is used in PlayerFactory to differentiate between a computer player and a sentient player.
+    * BoardButton extends an imported class called Button, not a user made class.
+    * The main class is used only to get the application started.
 1. Don’t be stuck for too long, if you don't understand a section jot it down below and move on.
     * Jot down part of the code you don't understand here.
     * I'd like each person to jot down at least 2 things unfamiliar to them.
+    * I am unfamiliar with the "enum" data type in the PlayerFactory class.
+    * I am unfamiliar with why the PlayerFactory class exists in the first place.  Is it supposed to instantiate a player and a computer player or does it do something else?
 1. Now Take 5 minutes  and team up with one of your group members and take turns trying to explain what you’ve understood to someone else.
     * Ask if they can answer the items you jotted down in #2.
 1. Let's discuss as a class the items you still have questions about or are unfamiliar with.
