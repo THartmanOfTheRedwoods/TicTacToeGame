@@ -9,9 +9,11 @@ New developers will often be asked to get up to speed on a project rapidly. It i
 1. Clone your GitHub Account's repo to your local machine.
 1. Now, take 15 minutes to get a big picture of the code in this application and its features.
     * Jot down notes here concerning: classes, objects, encapsulation, abstraction, inheritance, and polymorphism (i.e. if they are used, where they occur, etc.).
-1. Don’t be stuck for too long, if you don't understand a section jot it down below and move on.
+   - I see that there are several instances of inheritance, from the keyword extend. Like Sentient and Computer inherit from player. Or, BoardButton extends button. However this is not from a user made superclass, rather it looks like its from a javafx library. Inheritance is used from the abstract classes like Player. There is some encapsulation of player info like name and score, which makes sense as these should not be outwardly accessible, same with the button coordinates. The takeTurn method is an example of polymorphism because it extends a method given by an abstract class, but it is implemented differently between subclasses, Sentient and Computer.
+2. Don’t be stuck for too long, if you don't understand a section jot it down below and move on.
     * Jot down part of the code you don't understand here.
     * I'd like each person to jot down at least 2 things unfamiliar to them.
+   - I am curious about the "case" keyword and "enum", as these are unfamiliar to me. I am also a little confused about the PlayerFactory, what is happening with the return switch() statement and the lamda functions underneath?
 1. Now Take 5 minutes  and team up with one of your group members and take turns trying to explain what you’ve understood to someone else.
     * Ask if they can answer the items you jotted down in #2.
 1. Let's discuss as a class the items you still have questions about or are unfamiliar with.
