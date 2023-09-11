@@ -26,3 +26,7 @@ New developers will often be asked to get up to speed on a project rapidly. It i
     * <iframe width="560" height="315" src="https://www.youtube.com/embed/l-hh51ncgDI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 1. I've implemented this algorithm in Computer.java for the AI player, BUT I've added a bug that causes the AI to malfunction when it is the minimizing player.
     * If you can find the MiniMax bug, correct it in your Java code, and submit a pull request back to this branch under a **feature branch** called **MiniMaxBug** you can receive a full lab grade.
+
+
+I had a hard time understanding getChildren but after the discussion in class I was able to understand that this was a part of encapsulation and get/set are ways to edit private methods. Getter methods retrieve values from the private fields within a class. The setter method is used for setting values in the private class.
+Another thing that I didn't understand before the discussion was void and later came to find out that void means that it returns no value and the importance in returning no value is that the method performs an action but don't need to produce a result later on in the code. 
