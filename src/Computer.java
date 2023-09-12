@@ -9,7 +9,7 @@ public class Computer extends Player {
     @Override
     //public void takeTurn(GridPane board) {
     public void takeTurn(TicTacToe game) {
-        /*
+/*
         outerLoop:
         for(int r=0; r<board.length; r++) {
             for(int c=0; c<board[r].length; c++) {
@@ -20,7 +20,9 @@ public class Computer extends Player {
                 }
             }
         }
-        */
+
+
+ */
         // Get the game board
         Node[][] board = game.getBoard();
         // Initialize best score to min or max depending on player's minimax role.

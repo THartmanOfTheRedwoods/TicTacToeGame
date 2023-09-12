@@ -1,4 +1,4 @@
-public abstract class Player {
+public abstract class Player extends PlayerFactory {
 
     private final String name;
     private final String marker;
