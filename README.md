@@ -19,6 +19,24 @@ New developers will often be asked to get up to speed on a project rapidly. It i
 1. Commit & Push your README.md notes back to your origin and issue a Pull request to my instructor repo.
 1. Submit your Pull request URL to **Developer Skills Lab**
 
+
+<><><><><><><><>
+     NOTES
+<><><><><><><><>
+
+Don't Know
+1. Curious to know why you made takeTurn an abstract method.
+2. Curious to know why in all caps COMPUTER & SENTIENT?
+3. What is enum as in I see how you used it for PlayerTypes but
+don't understand that.
+4. What is node [][], just a 2D matrix?
+
+Know
+1. Extensive use of inheritance i.e. BoardButton, Computer, Sentient,TicTacToe.
+2. The TicTacToe class is taking care of all the displaying tasks.
+3. The Computer class runs algorithms to determine score
+4. Main function executes application that has been inherited by TicTacToe,by using the super init
+
 ## Part 2: Demo & Bug Bounty (Not time Sensitive for extra credit)
 
 1. After my in class demonstration, see if you can use the JavaFX knowledge you obtained this week to get the project functioning.
