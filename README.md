@@ -9,6 +9,62 @@ New developers will often be asked to get up to speed on a project rapidly. It i
 1. Clone your GitHub Account's repo to your local machine.
 1. Now, take 15 minutes to get a big picture of the code in this application and its features.
     * Jot down notes here concerning: classes, objects, encapsulation, abstraction, inheritance, and polymorphism (i.e. if they are used, where they occur, etc.).
+    *
+
+Classes and Objects:
+Sentient Class:
+
+Usage: Represents a player type that does nothing in its takeTurn method, waiting for external input.
+Inheritance: Extends the Player class.
+PlayerFactory Class:
+
+Usage: Creates instances of different player types based on an enum (PlayerTypes).
+Enum: PlayerTypes contains labels for different player types.
+Method: getPlayer creates and returns a player based on the specified PlayerTypes.
+Player Abstract Class:
+
+Usage: Represents a generic player with common attributes (name, marker, wins, turn).
+Abstraction: Abstract method takeTurn to be implemented by subclasses.
+Polymorphism: Used as a base class for different player types.
+Computer Class:
+
+Usage: Represents a computer player that makes moves using the minimax algorithm.
+Inheritance: Extends the Player class.
+Polymorphism: Overrides takeTurn method.
+BoardButton Class
+
+Usage: Represents a button in the game board with associated row and column coordinates.
+Inheritance: Extends the Button class.
+Encapsulation:
+Private Variables:
+
+name, marker, wins, turn in the Player class.
+coordinate in the BoardButton class.
+Private Methods:
+
+minimax method in the Computer class.
+Abstraction:
+Abstract Class and Method:
+Player class is abstract with an abstract method takeTurn.
+Provides a high-level interface for different player types.
+Inheritance:
+Class Inheritance:
+Sentient and Computer classes extend the Player class.
+Computer extends Player for specific computer player functionality.
+Polymorphism:
+Method Polymorphism:
+takeTurn method is polymorphic, being implemented differently in Sentient and Computer classes.
+getPlayer method in PlayerFactory uses switch-case polymorphism based on PlayerTypes.
+Unfamiliar Parts:
+Minimax Algorithm:
+
+The implementation of the minimax algorithm in the Computer class for decision-making.
+PlayerFactory Usage:
+
+Understanding how the PlayerFactory is used and how it creates instances based on player types.
+Code Clarification:
+Usage of Player Class in TicTacToe:
+Clarification needed on how the Player class is utilized in the TicTacToe class, specifically in the startOver and play methods.
 1. Don’t be stuck for too long, if you don't understand a section jot it down below and move on.
     * Jot down part of the code you don't understand here.
     * I'd like each person to jot down at least 2 things unfamiliar to them.
