@@ -9,7 +9,35 @@ New developers will often be asked to get up to speed on a project rapidly. It i
 1. Clone your GitHub Account's repo to your local machine.
 1. Now, take 15 minutes to get a big picture of the code in this application and its features.
     * Jot down notes here concerning: classes, objects, encapsulation, abstraction, inheritance, and polymorphism (i.e. if they are used, where they occur, etc.).
-1. Don’t be stuck for too long, if you don't understand a section jot it down below and move on.
+1.Classes:
+
+Player: Represents a player in the game with attributes such as name, marker (X or O), and turn.
+BoardButton: Represents each button in the Tic Tac Toe grid.
+Computer: Inherits from Player and represents the computer player in the game.
+TicTacToe: Manages the game logic and GUI interaction.
+Objects:
+
+Instances of the Player class represent human players.
+Instances of the Computer class represent the computer player.
+Instances of the BoardButton class represent each button in the game grid.
+An instance of the TicTacToe class manages the game as a whole.
+Encapsulation:
+
+Encapsulation is demonstrated by the classes, where each class encapsulates its data and methods.
+Player class encapsulates player information such as name, marker, and turn.
+TicTacToe class encapsulates game logic and GUI interaction.
+Abstraction:
+
+Abstraction is achieved by hiding the complex implementation details and exposing only necessary features.
+TicTacToe class abstracts away the details of how the game is played and provides methods to interact with the game.
+The minimax algorithm abstracts away the details of how the computer makes its moves.
+Inheritance:
+
+Inheritance is utilized in the Computer class, which inherits from the Player class to inherit common player attributes and methods.
+Polymorphism:
+
+Polymorphism is seen when the takeTurn method is overridden in the Computer class, providing different behavior compared to the Player class.
+The minimax method exhibits polymorphism, as it can handle different types of players and game states while providing a consistent inte Don’t be stuck for too long, if you don't understand a section jot it down below and move on.
     * Jot down part of the code you don't understand here.
     * I'd like each person to jot down at least 2 things unfamiliar to them.
 1. Now Take 5 minutes  and team up with one of your group members and take turns trying to explain what you’ve understood to someone else.
