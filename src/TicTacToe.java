@@ -14,6 +14,8 @@ import java.util.ArrayList;
 
 public class TicTacToe extends Application {
 
+    //This is the basic logic for the application buttons, grid squares
+
     private Node[][] gridPaneArray = null; // A better way to keep track of my board and access it by x, y
     private Label lblState;
     private GridPane board;
@@ -167,6 +169,7 @@ public class TicTacToe extends Application {
         return row == this.squares || col == this.squares || diag == this.squares || rdiag == this.squares;
     }
 
+    //This throws text of a tie or a winner(if there is one)
     private void announceWinner(Player current) {
         Alert a = new Alert(Alert.AlertType.INFORMATION);
         if( current == null) { // implies a tie

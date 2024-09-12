@@ -5,6 +5,8 @@ public abstract class Player {
     private int wins = 0;
     private final int turn;
 
+    //This gets the name of players, their markers, and their turns
+
     public Player(String name, String marker, int turn) {
         this.name = name;
         this.marker = marker;

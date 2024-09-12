@@ -51,6 +51,7 @@ public class Computer extends Player {
         Platform.runLater(((BoardButton)board[move[0]][move[1]])::fire);
     }
 
+    //This is the spacing between each box for the board
     private String spacing(int depth) {
         StringBuilder d = new StringBuilder();
         depth *= 2;
@@ -58,6 +59,7 @@ public class Computer extends Player {
         return d.toString();
     }
 
+    //This checks if there is a tie and there are no win conditions
     private boolean checkTie(Node[][] board) {
         for(Node[] nodes : board) {
             for (Node node : nodes) {
