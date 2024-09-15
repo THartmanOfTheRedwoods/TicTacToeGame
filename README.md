@@ -9,9 +9,26 @@ New developers will often be asked to get up to speed on a project rapidly. It i
 1. Clone your GitHub Account's repo to your local machine.
 1. Now, take 15 minutes to get a big picture of the code in this application and its features.
     * Jot down notes here concerning: classes, objects, encapsulation, abstraction, inheritance, and polymorphism (i.e. if they are used, where they occur, etc.).
+   > * inheritance noted for Computer and Sentient class as they extend the 
+    Player class 
+   > * BoardButton extends Button
+   > * Encapsulation in Player class
 1. Don’t be stuck for too long, if you don't understand a section jot it down below and move on.
     * Jot down part of the code you don't understand here.
     * I'd like each person to jot down at least 2 things unfamiliar to them.
+   > * ` private Node[][] gridPaneArray = null;`
+   > * not sure what "enum" is: 
+     `public enum PlayerTypes {
+        COMPUTER("Computer"),
+        SENTIENT("Sentient");
+        private final String label;
+        PlayerTypes(String label) {
+            this.label = label;
+        }
+        public String toString() {
+            return label;
+        }
+     }`
 1. Now Take 5 minutes  and team up with one of your group members and take turns trying to explain what you’ve understood to someone else.
     * Ask if they can answer the items you jotted down in #2.
 1. Let's discuss as a class the items you still have questions about or are unfamiliar with.
