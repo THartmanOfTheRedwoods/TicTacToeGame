@@ -9,6 +9,17 @@ New developers will often be asked to get up to speed on a project rapidly. It i
 1. Clone your GitHub Account's repo to your local machine.
 1. Now, take 15 minutes to get a big picture of the code in this application and its features.
     * Jot down notes here concerning: classes, objects, encapsulation, abstraction, inheritance, and polymorphism (i.e. if they are used, where they occur, etc.).
+NOTES: - Main.java contains application launch. 
+	-BoardButton class extends the Button class, and includes attribute coordinate and methods getCol(), getRow(), and isAvailable().
+	-Computer class defines computer which extends Player. 
+	-Player has attributes name, marker, and turn.
+	-PlayerFactory creates instances of player types (computer, sentient)
+	-Objects are created in BoardButton, Computer, and Player classes. 
+	-Encapsulation is used in the private fields name, marker, coordinate and public getter methods getCol(), getRow(), getName().
+	-The Player class is abstract because it is a blueprint for player related functions. 
+	-Computer class extends the Player class, inheriting the getName(), getMarker(), and provides its own instance of takeTurn().	
+	
+	
 1. Don’t be stuck for too long, if you don't understand a section jot it down below and move on.
     * Jot down part of the code you don't understand here.
     * I'd like each person to jot down at least 2 things unfamiliar to them.
