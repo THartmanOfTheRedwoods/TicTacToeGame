@@ -9,11 +9,16 @@ New developers will often be asked to get up to speed on a project rapidly. It i
 1. Clone your GitHub Account's repo to your local machine.
 1. Now, take 15 minutes to get a big picture of the code in this application and its features.
     * Jot down notes here concerning: classes, objects, encapsulation, abstraction, inheritance, and polymorphism (i.e. if they are used, where they occur, etc.).
+    * I notice inheritance with the computer and sentient classes inheriting from player class.
+    * The play class abstracts functions allowing the computer and sentient classes to have their own behaviors.
 1. Don’t be stuck for too long, if you don't understand a section jot it down below and move on.
     * Jot down part of the code you don't understand here.
     * I'd like each person to jot down at least 2 things unfamiliar to them.
+    * There is a lot I don't understand in the javaFX section in the TicTacToe class. Much to learn!
+    * I haven't seen a use case such as Node[][] board = game.getBoard();. I asked my friendly chatbot since my group members are not with meand it gave me an explanation but I still don't fully understand.
 1. Now Take 5 minutes  and team up with one of your group members and take turns trying to explain what you’ve understood to someone else.
     * Ask if they can answer the items you jotted down in #2.
+    * Chatbot supremus primus was able to give me some insight on my confusions.
 1. Let's discuss as a class the items you still have questions about or are unfamiliar with.
     * Take notes here of things that became more clear after the class discussion.
 1. Commit & Push your README.md notes back to your origin and issue a Pull request to my instructor repo.
