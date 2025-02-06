@@ -26,3 +26,16 @@ New developers will often be asked to get up to speed on a project rapidly. It i
     * <iframe width="560" height="315" src="https://www.youtube.com/embed/l-hh51ncgDI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 1. I've implemented this algorithm in Computer.java for the AI player, BUT I've added a bug that causes the AI to malfunction when it is the minimizing player.
     * If you can find the MiniMax bug, correct it in your Java code, and submit a pull request back to this branch under a **feature branch** called **MiniMaxBug** you can receive a full lab grade.
+
+
+
+## Notes
+* Abstract class Player has attributes "name", "marker", "wins", and "turn", a constructor, and abstract methods "getName", "getMarker", "getTurn", "getWins", and "addWin". It has one defined method, "takeTurn"
+* the "takeTurn" method is an example of polymorphism as it is used differently by Computer and Sentient
+* The Computer class inherits from Player.
+* Minimax algorithm method defined in "Computer" class
+* Class BoardButton inherits from the predefined class "Button", which is imported from javafx
+* Main executes the TicTacToe class while defining launch settings
+* PlayerFactory class seems to be used to label the player types, being "Computer" and "Sentient"
+* Sentient class inherits from Player
+* The TicTacToe class contains the code for displaying the game with JavaFX
