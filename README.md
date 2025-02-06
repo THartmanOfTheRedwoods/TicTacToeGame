@@ -9,13 +9,24 @@ New developers will often be asked to get up to speed on a project rapidly. It i
 1. Clone your GitHub Account's repo to your local machine.
 1. Now, take 15 minutes to get a big picture of the code in this application and its features.
     * Jot down notes here concerning: classes, objects, encapsulation, abstraction, inheritance, and polymorphism (i.e. if they are used, where they occur, etc.).
+      * Main: Launches the program in an application window, which runs the TicTacToe class.
+      * TicTacToe: imports javafx libraries, extends application params with some modifications, contains many classes for general game handling, i.e. start, startover, play, checkwinner, etc.
+      * BoardButton: Looks like it tries to see if a certain block is available to become a button (If a square has been pressed, it cannot be pressed again/unavailable).
+      * Player: Allows creation of Player object, with get methods and a set method for adding wins.
+      * PlayerFactory: Creates enum of player types, provides a simple get method.
+      * Sentient: Extension of player for sentient players.
+      * Computer: Allows creation of Computer object. Contains algorithms to calculate the next move, AI class.
 1. Don’t be stuck for too long, if you don't understand a section jot it down below and move on.
     * Jot down part of the code you don't understand here.
     * I'd like each person to jot down at least 2 things unfamiliar to them.
+      * I don't recognize the super() keyword (line 7 BoardButton.java), it seems to reference the parent object.
+      * I'm not familiar with the functionality of the JavaFX Application class, but from the looks of it, it runs the program as an application in a custom-sized window.
 1. Now Take 5 minutes  and team up with one of your group members and take turns trying to explain what you’ve understood to someone else.
     * Ask if they can answer the items you jotted down in #2.
+      * Super references the parent object/constructor.
 1. Let's discuss as a class the items you still have questions about or are unfamiliar with.
     * Take notes here of things that became more clear after the class discussion.
+      * You can enumerate static objects for uses like properties lists.
 1. Commit & Push your README.md notes back to your origin and issue a Pull request to my instructor repo.
 1. Submit your Pull request URL to **Developer Skills Lab**
 
