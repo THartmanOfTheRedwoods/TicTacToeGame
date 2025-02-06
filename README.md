@@ -9,9 +9,21 @@ New developers will often be asked to get up to speed on a project rapidly. It i
 1. Clone your GitHub Account's repo to your local machine.
 1. Now, take 15 minutes to get a big picture of the code in this application and its features.
     * Jot down notes here concerning: classes, objects, encapsulation, abstraction, inheritance, and polymorphism (i.e. if they are used, where they occur, etc.).
+    * Class BoardButton extends Button is an example of inheritance.
+    * Class Computer extends Player is an example of inheritance.
+    * Class player is abstract.
+    * Class Sentient extends Player is an example of inheritance.
+    * Class TicTacToe extends Application is an example of inheritance.
+    * Computer and Sentient both extending the Player class is an example of polymorphism
+    * this.name, this.marker, and this.turn are objects in the Player class.
+    * Class takeTurn is abstract that is implemented by Computer and Sentient
+    * this.coordinate is an object in the BoardButton class.  It is also final meaning it cannot be changed.
+    * The objects name, marker, and turn in the Player class are final, meaning they cannot be changed.
 1. Don’t be stuck for too long, if you don't understand a section jot it down below and move on.
     * Jot down part of the code you don't understand here.
     * I'd like each person to jot down at least 2 things unfamiliar to them.
+    * public enum PlayerTypes is unfamiliar to me.
+    * public VBox createConfigMenu is unfamiliar to me.
 1. Now Take 5 minutes  and team up with one of your group members and take turns trying to explain what you’ve understood to someone else.
     * Ask if they can answer the items you jotted down in #2.
 1. Let's discuss as a class the items you still have questions about or are unfamiliar with.
