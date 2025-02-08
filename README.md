@@ -19,6 +19,46 @@ New developers will often be asked to get up to speed on a project rapidly. It i
 1. Commit & Push your README.md notes back to your origin and issue a Pull request to my instructor repo.
 1. Submit your Pull request URL to **Developer Skills Lab**
 
+Notes: This is a JavaFX-based Tic-Tac-Toe game using Application.
+start() sets up the UI, while play() handles game progress.
+Uses BorderPane for layout and GridPane for the game board.
+✅ Player Management:
+
+Players are stored in ArrayList<Player> players.
+createConfigMenu() allows adding players dynamically.
+nextPlayer() cycles through the players.
+✅ Game Flow:
+
+startOver() resets the game.
+play() prompts the next player and updates the board.
+checkWinner() determines if someone has won.
+announceWinner() displays the result via an alert.
+✅ Button Handling:
+
+BoardButton objects represent Tic-Tac-Toe squares.
+Clicking a button updates the board and checks for a winner.
+✅ Grid Management:
+
+gridPaneArray stores the board for easier access.
+initializeGridPaneArray() maps GridPane nodes to a 2D array.
+Things I Don't Fully Understand
+❓ PlayerFactory and Player Classes
+
+playerFactory.getPlayer(...) is used, but PlayerFactory isn't shown.
+Need to check how different player types work.
+❓ How takeTurn() Works
+
+p.takeTurn(this); is called in play(), but I don’t know what it does.
+The Player class must have a takeTurn() method, but it's missing here.
+❓ Grid Indexing in checkWinner()
+
+The logic for diagonal checks in checkWinner() makes sense, but I’d like to debug edge cases.
+Not sure how Button text retrieval ensures correctness.
+❓ Handling of Parameters
+
+init() retrieves size and squares from getParameters().
+Where do these parameters come from when the program runs?
+
 ## Part 2: Demo & Bug Bounty (Not time Sensitive for extra credit)
 
 1. After my in class demonstration, see if you can use the JavaFX knowledge you obtained this week to get the project functioning.
