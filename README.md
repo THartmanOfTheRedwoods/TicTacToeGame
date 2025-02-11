@@ -19,6 +19,12 @@ New developers will often be asked to get up to speed on a project rapidly. It i
 1. Commit & Push your README.md notes back to your origin and issue a Pull request to my instructor repo.
 1. Submit your Pull request URL to **Developer Skills Lab**
 
+## Part 1 Notes
+1. There is a LOT of inhereitance in these files. Player and Button in particular seem to be inherited an awful lot.
+2. Not really sure what Enum is doing in PlayerFactory.Java
+3. Theres also Lambda expressions at the botton of PlayerFactory.Java that I don't really recognize.
+4. I'm surprised some of these inherited classes aren't interfaces. It seems like Button or Player could be interfaces.
+
 ## Part 2: Demo & Bug Bounty (Not time Sensitive for extra credit)
 
 1. After my in class demonstration, see if you can use the JavaFX knowledge you obtained this week to get the project functioning.
