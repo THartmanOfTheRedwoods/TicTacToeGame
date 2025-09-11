@@ -12,6 +12,8 @@ New developers will often be asked to get up to speed on a project rapidly. It i
 1. Don’t be stuck for too long, if you don't understand a section jot it down below and move on.
     * Jot down part of the code you don't understand here.
     * I'd like each person to jot down at least 2 things unfamiliar to them.
+    1. ***The first thing i wasnt sure about node[ ]***
+    2. ***The second thing i wasnt understanding at first was the "is.Maximizing" section until i played around with it.***
 1. Now Take 5 minutes  and team up with one of your group members and take turns trying to explain what you’ve understood to someone else.
     * Ask if they can answer the items you jotted down in #2.
 1. Let's discuss as a class the items you still have questions about or are unfamiliar with.
