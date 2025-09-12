@@ -92,25 +92,30 @@ public class Computer extends Player {
 
         int bestScore;
         if(isMaximizing) {
+
             //System.out.printf("%sMaxP: %d AI_T: %d%n", sp, playerIdx, this.getTurn());
             bestScore = Integer.MIN_VALUE;
+
             for(int r=0; r<board.length; r++) {
                 for(int c=0; c<board[r].length; c++) {
+                    //System.out.println(r);
                     BoardButton square = (BoardButton)board[r][c];
                     // If a square is available, test it out
                     if(square.isAvailable()) {
                         // Simulate choosing this available square
                         square.setText(game.getPlayers().get(playerIdx).getMarker());
                         int score = minimax(game, square, depth+1, playerIdx, false);
+
                         // Remove my fake choice from board
                         square.setText("");
-                        bestScore = Math.max(score, bestScore);
+                        bestScore = Math.max(bestScore, score);
                     }
                 }
+                //System.out.println(bestScore);
             }
             return bestScore;
         } else {
-            //System.out.printf("%sMinP: %d AI_T: %d%n", sp, playerIdx, this.getTurn());
+            System.out.printf("%sMinP: %d AI_T: %d%n", sp, playerIdx, this.getTurn());
             bestScore = Integer.MAX_VALUE;
             for(int r=0; r<board.length; r++) {
                 for(int c=0; c<board[r].length; c++) {

@@ -36,7 +36,6 @@ public class TicTacToe extends Application {
         this.squaresSquared = this.squares * this.squares;
         this.players = new ArrayList<>();
     }
-
     @Override
     public void start(Stage window) {
         window.setWidth(size);
