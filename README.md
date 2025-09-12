@@ -29,4 +29,5 @@ New developers will often be asked to get up to speed on a project rapidly. It i
 
 
 ## I couldn't figure out the bug. :(
-- threading
+
+- I don't understand threading
