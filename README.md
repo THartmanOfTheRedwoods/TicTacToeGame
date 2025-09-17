@@ -1,28 +1,118 @@
-# TicTacToeGame Lab
-JavaFX TicTacToeGame for CIS-18 bug training!
+# CIS-18 Lab 3 "Developer Skills" Writeup
 
-## Part 1: Developer Skills
+Main.java:
+	IMPORT JavaFX {}
+	MAIN {
+		access public
+		membership static (static method)
+		return void (no return value)
+		name main
+		args string (size of squares, number of squares for grid)
+		app launch (launches the TicTacToe application)
+	}
 
-New developers will often be asked to get up to speed on a project rapidly. It is essential that new developers be able to look through code, identify pieces the under-stand, and research pieces they do not. This is an exercise that takes 2 forms, first an introduction to code scanning and review and second as a tool to help you identify areas you need to improve your knowledge of.
+TicTacToe.java:
+	GAME {
+	access public
+	type class_inherited
+	family Application (super)
+	name TicTacToe
+	vars * (initalizes a bunch of important variables and elements)
+	}
+	INIT {
+	access public
+	return void
+	relation EXCEPTION (probably related to error handling)
+	name init
+	vars * (parameters)
+	}
+	START {
+	access public
+	return void
+	element (sets window size and creates menus)
+	name start
+	}
+	VBOX {
+         # I'm not even touching this..., or the rest of the file for that matter.
+         # I understand some basic interactions but the rest feels beyond me at the moment.
+	}
 
-1. Fork this repo to your own GitHub Account.
-1. Clone your GitHub Account's repo to your local machine.
-1. Now, take 15 minutes to get a big picture of the code in this application and its features.
-    * Jot down notes here concerning: classes, objects, encapsulation, abstraction, inheritance, and polymorphism (i.e. if they are used, where they occur, etc.).
-1. Don’t be stuck for too long, if you don't understand a section jot it down below and move on.
-    * Jot down part of the code you don't understand here.
-    * I'd like each person to jot down at least 2 things unfamiliar to them.
-1. Now Take 5 minutes  and team up with one of your group members and take turns trying to explain what you’ve understood to someone else.
-    * Ask if they can answer the items you jotted down in #2.
-1. Let's discuss as a class the items you still have questions about or are unfamiliar with.
-    * Take notes here of things that became more clear after the class discussion.
-1. Commit & Push your README.md notes back to your origin and issue a Pull request to my instructor repo.
-1. Submit your Pull request URL to **Developer Skills Lab**
+Computer.java:
+	IMPORT JavaFX {}
+	COMPUTER {
+		access public
+		name computer
+		parent PLAYER
+		type object (?)
+		args */*/* [super */*/*] (takes name, marker, turn from parent class PLAYER)
+		constraint override (child method declaration overrides parent method declaration)
+	}
+	TAKE_TURN {
+		access public
+		name takeTurn
+		return void (no return value)
+		args TicTacToe_game (__UNKNOWN__)
+		comment code_outerloop (code referenced from BoardButton.java)
+		element javafx_node { type abstract_class (creates blueprint for game board) }
+		int var_score (initializes score variable with lowest possible value an iteger can have)
+		function int_move (takes an integer in a supplied register and copies it as an integer to a new register? __UNKNOWN__)
+		loop for_int {multiline summary (does something with simulating player choices) }
+		element platform.runlater (does something)
+	}
+	SPACING {
+		access private
+		name spacing
+		type String
+		args int
+		elements (updates the depth)
+	}
+	CHECKTIE {
+		access private
+		name checktie
+		type boolean
+		args Node_object
+		loop node.board (checks if all squares are empty to see if game is over)
+	}
+	MINIMAX {
+		access private
+		name minimax
+		type int
+		args ***
+		element *** (checks for winning move/winning player, repeats simulation based on loop conditions)
 
-## Part 2: Demo & Bug Bounty (Not time Sensitive for extra credit)
+BoardButton.java:
+	BOARDBUTTON {
+		access public
+		name boardbutton
+		type class_inherited
+		family Button (super)
+		element int (coordinates)
+		object BoardButton (dunno)
+		int column
+		int row
+		boolean (square availability)
+	}
 
-1. After my in class demonstration, see if you can use the JavaFX knowledge you obtained this week to get the project functioning.
-1. Watch the following video on the MiniMax algorithm.
-    * <iframe width="560" height="315" src="https://www.youtube.com/embed/l-hh51ncgDI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-1. I've implemented this algorithm in Computer.java for the AI player, BUT I've added a bug that causes the AI to malfunction when it is the minimizing player.
-    * If you can find the MiniMax bug, correct it in your Java code, and submit a pull request back to this branch under a **feature branch** called **MiniMaxBug** you can receive a full lab grade.
+PlayerFactory.java:
+    PLAYER_FACTORY {
+        access public
+        constraint PLAYER_TYPES
+		method get_player
+		object PLAYER
+    }
+        PLAYER_TYPES {
+            access public
+			membership static
+			create object (creates computer and sentient players, locks player names)
+			recursive call, return (sets name of player to the defined label and returns labels)
+        }
+        PLAYER {
+			access public
+			name get_player
+			type object (method)
+			args playerType
+			args name (string)
+			args marker (string, __UNKNOWN__)
+			int turn
+			code return (returns computer and sentient (human?) playertypes with updated turns)
+		}
