@@ -23,7 +23,6 @@ New developers will often be asked to get up to speed on a project rapidly. It i
 ## Part 2: Demo & Bug Bounty **(Not time Sensitive for extra credit)**
 
 1. After my in class demonstration, see if you can use the JavaFX knowledge you obtained this week to get the project functioning.
-1. Watch the following video on the MiniMax algorithm.
-    * <iframe width="560" height="315" src="https://www.youtube.com/embed/l-hh51ncgDI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+1. Watch a video on the [MiniMax algorithm](https://www.youtube.com/embed/l-hh51ncgDI).
 1. I've implemented this algorithm in Computer.java for the AI player, BUT I've added a bug that causes the AI to malfunction when it is the minimizing player.
     * If you can find the MiniMax bug, correct it in your Java code, and submit a pull request back to this branch under a **feature branch** called **MiniMaxBug** you can receive a full lab grade.
