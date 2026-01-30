@@ -72,9 +72,9 @@ public class Computer extends Player {
     private int minimax(TicTacToe game, BoardButton sq, int depth, int playerIdx, boolean isMaximizing) {
         //TODO: use Max^N algorithm to handle more than 2 players.
         String sp = spacing(depth);
-        System.out.printf("%s(%d, %d)%n", sp, sq.getRow(), sq.getCol());
+        ////System.out.printf("%s(%d, %d)%n", sp, sq.getRow(), sq.getCol());
         if(game.checkWinner(sq.getRow(), sq.getCol(), game.getPlayers().get(playerIdx).getMarker())) {
-            System.out.printf("%s  This would be a winner for %s%n", sp, game.getPlayers().get(playerIdx).getName());
+            ////System.out.printf("%s  This would be a winner for %s%n", sp, game.getPlayers().get(playerIdx).getName());
             // TODO: handle case of Tie (i.e. score 0).
             // If its a winner, who is the winner?
             return (this.getTurn() == playerIdx) ? 1 : -1;
@@ -83,7 +83,7 @@ public class Computer extends Player {
         Node[][] board = game.getBoard();
 
         if(checkTie(board)) {
-            System.out.printf("%sWould be a tie!%n", sp);
+            ////System.out.printf("%sWould be a tie!%n", sp);
             return 0;
         }
 
