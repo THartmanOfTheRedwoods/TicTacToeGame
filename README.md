@@ -20,6 +20,25 @@ New developers will often be asked to get up to speed on a project rapidly. It i
 1. Commit & Push your README.md notes back to your origin and issue a Pull request to my instructor repo.
 1. Submit your Pull request URL to **Developer Skills Lab**
 
+Things I recognize:
+
+•	Import, will import dependencies from other classes
+•	Public, meaning it can be ran from other classes
+•	Private, meaning it can only be ran in that class
+•	String, Boolean, int, different variable types
+•	Void, indicates nothing is being returned
+•	Print, returns statement
+•	Class, something you base an object off
+•	.lblState, label that is pulling from dependency
+
+Things I don’t:
+
+•	Override (Computer.java)
+•	Node, Label, GridPane, Borderpane (TicTacToe.java)
+•	enum
+•	++, for instance playerIdx++
+
+
 ## Part 2: Demo & Bug Bounty **(Not time Sensitive for extra credit)**
 
 1. After my in class demonstration, see if you can use the JavaFX knowledge you obtained this week to get the project functioning.
